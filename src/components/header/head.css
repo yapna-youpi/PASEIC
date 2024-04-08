@@ -28,3 +28,13 @@
     background-color: var(--primaryColor);
     color: #fff;
 }
+
+@media only screen and (max-width: 568px) {
+    .social{
+        width: 61%;
+        text-align: center;
+    }
+    .head .icon {
+        margin-left: 2px;
+    }    
+}

@@ -14,10 +14,6 @@ const Header = () => {
 			display: "courses",
 		},
 		{
-			path: "About",
-			display: "about",
-		},
-		{
 			path: "Team",
 			display: "team",
 		},
@@ -30,8 +26,8 @@ const Header = () => {
 			display: "journal",
 		},
 		{
-			path: "Contact",
-			display: "contact",
+			path: "About",
+			display: "about",
 		},
 	];
 
@@ -48,7 +44,7 @@ const Header = () => {
             ))
           }
         </ul>
-        <div className="start">
+        <div className="start font-bold">
           <button>Nous Contacter</button>
         </div>
 		<button className="toggle" onClick={()=> setClick(!click)}>

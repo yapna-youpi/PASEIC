@@ -1,11 +1,14 @@
+import { useNavigate } from "react-router-dom"
 import "./head.css"
+
 const Head = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <section className='head'>
         <div className="container flexSB">
-            <div className="logo">
-                <h1 className="text-3xl mb-0"><span className="text-firstColor">PAS</span><span className="text-secondColor">EIC</span></h1>
+            <div className="logo cursor-pointer">
+                <h1 className="text-3xl mb-0" onClick={()=> navigate("/")}><span className="text-firstColor">PAS</span><span className="text-secondColor">EIC</span></h1>
                 <span className="-translate-y-1 inline-block"> Etude - Formation - Travail </span>
             </div>
 
